@@ -1,0 +1,12 @@
+<view class="intro">
+    <view class="header">header</view>
+    <scroll-view class="scrollContainer" style="height: calc(100% - {{noScrollHeight}}px);" scroll-y scroll-into-view="{{scrollIntoView}}" scroll-with-animation>
+        <view>
+            <view wx:for="{{list}}" class="listItem">{{item}}</view>
+            <view class="stickyWrapper" id="stickyWrapper" bindtap="handleClick">我是一个sticky1</view>
+            <view wx:for="{{list}}" class="listItem">{{item}}</view>
+            <view class="stickyWrapper">我是一个sticky2</view>
+            <view wx:for="{{list}}" class="listItem">{{item}}</view>
+        </view>
+    </scroll-view>
+</view>
